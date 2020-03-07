@@ -21,34 +21,28 @@
     ],
     "modules": [{
             "name": "libgnome-games-support",
+            "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/libgnome-games-support/1.4/libgnome-games-support-1.4.0.tar.xz",
-                "sha256": "1d89b145da7d4aedae3fa75456d97ed1b4a5bc062a01e7d0db93b006bdf11456"
+                "url": "https://download.gnome.org/sources/libgnome-games-support/1.6/libgnome-games-support-1.6.0.1.tar.xz",
+                "sha256": "a82536edc22c0d1c4fa4247ae2dfed5d6bdf63f0df9c088167c392d78a9c2e76"
             }]
         },
         {
             "name" : "gsound",
-            "buildsystem" : "autotools",
             "sources" : [{
-                "type" : "git",
-                "url" : "https://gitlab.gnome.org/GNOME/gsound.git",
-                "tag": "1.0.2",
-                "commit": "a86946b494aa32782b3f6334344d07b5c11d5219"
+                "type" : "archive",
+                "url" : "https://download.gnome.org/sources/gsound/1.0/gsound-1.0.2.tar.xz",
+                "sha256": "bba8ff30eea815037e53bee727bbd5f0b6a2e74d452a7711b819a7c444e78e53"
             }]
         },
         {
             "name": "gnome-robots",
             "buildsystem": "meson",
             "sources": [{
-                "type": "git",
-                "url": "https://gitlab.gnome.org/GNOME/gnome-robots.git",
-                "tag": "3.34.0",
-                "commit": "d1bee596425ab34ee6a28757b6fbc2c39eabf6cc"
-            },
-            {
-                "type": "patch",
-                "path": "appdata.patch"
+                "type": "archive",
+                "url": "https://download.gnome.org/sources/gnome-robots/3.36/gnome-robots-3.36.0.tar.xz",
+                "sha256": "3aff1d82a3e5a58d401ad755dd2b0ea1fec0ee413665739ef9c00985176d8782"
             }]
         }
     ]
