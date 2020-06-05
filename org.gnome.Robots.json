@@ -24,8 +24,8 @@
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/libgnome-games-support/1.6/libgnome-games-support-1.6.0.1.tar.xz",
-                "sha256": "a82536edc22c0d1c4fa4247ae2dfed5d6bdf63f0df9c088167c392d78a9c2e76"
+                "url": "https://download.gnome.org/sources/libgnome-games-support/1.6/libgnome-games-support-1.6.1.tar.xz",
+                "sha256": "fb686af62e24dc33f26c581aa019fcdf3605787dd76cb59ac99a8a34d1b808bf"
             }]
         },
         {
@@ -41,8 +41,8 @@
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/gnome-robots/3.36/gnome-robots-3.36.0.tar.xz",
-                "sha256": "3aff1d82a3e5a58d401ad755dd2b0ea1fec0ee413665739ef9c00985176d8782"
+                "url": "https://download.gnome.org/sources/gnome-robots/3.36/gnome-robots-3.36.1.tar.xz",
+                "sha256": "eb46a458c26ea845747b21b740f56615cdf4f470ec56fee81a9a317068e6ad62"
             }]
         }
     ]
