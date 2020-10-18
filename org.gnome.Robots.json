@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Robots",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "3.36",
+    "runtime-version": "3.38",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-robots",
     "finish-args": [
@@ -24,8 +24,8 @@
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/libgnome-games-support/1.6/libgnome-games-support-1.6.1.tar.xz",
-                "sha256": "fb686af62e24dc33f26c581aa019fcdf3605787dd76cb59ac99a8a34d1b808bf"
+                "url": "https://download.gnome.org/sources/libgnome-games-support/1.8/libgnome-games-support-1.8.0.tar.xz",
+                "sha256": "abdde538a14fd6078fe6b7e6e93f38a33491d9bec711a116d8b47530184cb3dd"
             }]
         },
         {
@@ -34,6 +34,19 @@
                 "type" : "archive",
                 "url" : "https://download.gnome.org/sources/gsound/1.0/gsound-1.0.2.tar.xz",
                 "sha256": "bba8ff30eea815037e53bee727bbd5f0b6a2e74d452a7711b819a7c444e78e53"
+            }],
+            "modules" : [{
+                "name" : "libcanberra",
+                "config-opts" : [
+                    "--disable-alsa",
+                    "--disable-null",
+                    "--disable-oss"
+                ],
+                "sources" : [{
+                    "type" : "archive",
+                    "url" : "http://0pointer.de/lennart/projects/libcanberra/libcanberra-0.30.tar.xz",
+                    "sha256" : "c2b671e67e0c288a69fc33dc1b6f1b534d07882c2aceed37004bf48c601afa72"
+                }]
             }]
         },
         {
@@ -41,8 +54,8 @@
             "buildsystem": "meson",
             "sources": [{
                 "type": "archive",
-                "url": "https://download.gnome.org/sources/gnome-robots/3.36/gnome-robots-3.36.1.tar.xz",
-                "sha256": "eb46a458c26ea845747b21b740f56615cdf4f470ec56fee81a9a317068e6ad62"
+                "url": "https://download.gnome.org/sources/gnome-robots/3.38/gnome-robots-3.38.0.tar.xz",
+                "sha256": "1fe8694aa7d4f86e77770649fcd8944b00535913cb5975bcd3adc424bdbeffe2"
             }]
         }
     ]
