@@ -1,7 +1,7 @@
 {
     "app-id": "org.gnome.Robots",
     "runtime": "org.gnome.Platform",
-    "runtime-version": "42",
+    "runtime-version": "46",
     "sdk": "org.gnome.Sdk",
     "command": "gnome-robots",
     "finish-args": [
@@ -13,12 +13,19 @@
         "--socket=pulseaudio"
     ],
     "cleanup": [
-        "/share/man",
         "/include",
-        "/lib/*.la",
         "/lib/pkgconfig",
+        "/man",
+        "/share/aclocal",
+        "/share/doc",
+        "/share/gdm",
+        "/share/gnome",
+        "/share/gtk-doc",
         "/share/man",
-        "/share/vala"
+        "/share/pkgconfig",
+        "/share/vala",
+        "*.la",
+        "*.a"
     ],
     "modules": [{
             "name": "libgnome-games-support",
@@ -48,6 +55,10 @@
                 "type": "archive",
                 "url": "https://download.gnome.org/sources/gnome-robots/40/gnome-robots-40.0.tar.xz",
                 "sha256": "6fbf2f885750f1a5110a724f8f35addd9bc61184ee31cf0c0cb89953e4f4cb11"
+            },
+            {
+                "type": "patch",
+                "path": "fix_appdata.patch"
             }]
         }
     ]
